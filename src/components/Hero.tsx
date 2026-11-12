@@ -18,9 +18,14 @@ export function Hero() {
           <li><a className="underline-offset-4 hover:text-acento hover:underline" href={perfil.whatsappLink} target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
         </ul>
       </div>
-      <div aria-hidden className="mx-auto flex h-48 w-48 items-center justify-center rounded-3xl bg-gradient-to-br from-acento to-acento-claro font-mono text-6xl font-bold text-white shadow-xl shadow-acento/20 sm:h-60 sm:w-60 sm:text-7xl">
-        {perfil.iniciais}
-      </div>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/luiz.jpg"
+        alt={`Foto de ${perfil.nomeCurto}`}
+        width={600}
+        height={600}
+        className="mx-auto h-48 w-48 rounded-full object-cover shadow-xl shadow-acento/20 ring-4 ring-cartao sm:h-60 sm:w-60"
+      />
     </section>
   );
 }
